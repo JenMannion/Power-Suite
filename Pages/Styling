@@ -1,0 +1,22 @@
+Any changes should be discussed as a team as they affect the whole site. Styling allows for different themes to be selected and styling for components to be set globally. Sometimes, for forms it is necessary to add custom styling to labels – you cannot add text directly to a form so add a section and style the label with HTML/CSS Some examples are shown below.  You will need to create the metadata from the Power Apps Management Portal.  
+
+ <div style="margin-left: 30px"> 
+    <p style="color:red;">All personnel operating military equipment (Green Fleet, White Fleet and Plant) are to ensure they are on My Drive.</p> 
+    <p style="color:red;">Applications will not be processed unless they have completed an MT Induction.</p> 
+</div> 
+
+Example
+
+<div> 
+    <p>NOTE: MyDrive and Fam/Conversion Training are only carried out on the following days: <b>Tuesday/Thursday</b></p>  
+    <p>Please bring the following documentation:</p> 
+    <ul> 
+        <li style="font-size: 16px; font-weight: normal;">Driving Licence</li> 
+        <li style="font-size: 16px; font-weight: normal;">United Kingdom Highway Code Test Certificate (IF APPLICABLE)</li> 
+        <li style="font-size: 16px; font-weight: normal;">Driver Training Record Folder (IF APPLICABLE)</li> 
+        <li style="font-size: 16px; font-weight: normal;">National insurance number</li> 
+    </ul> 
+    <p>FOR MATRIX HIGHWAY CODE TEST GO TO BFG.NET, COMPLETE TEST AND PRINT CERTIFICATE</p> 
+</div> 
+
+<p style="font-size: 16px; font-weight: normal;">Please list all applicants.</p> 
