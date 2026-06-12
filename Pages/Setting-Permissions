@@ -1,0 +1,17 @@
+At the top of the forma click on Permissions 
+
+Then click on New Permission on the dialog that opens. 
+
+Give the permission for the form a name – e.g. Create Issue form 
+
+Select the table to be updated 
+
+Select Global Access (others are role dependent) 
+
+For create forms check Create, Append and Append to (the Append options are for associated tables I.e. attachments. 
+
+For Update and Delete forms select Update or Delete as appropriate. 
+
+Click on Add roles and select the appropriate roles (usually Anonymous user and authenticated users. 
+
+Close the permissions dialog.
