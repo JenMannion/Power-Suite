@@ -1,0 +1,7 @@
+Make sure the correct solution is selected otherwise tables will not be created in the correct deployable solution. 
+
+Click on the + Table button to add a new table 
+Click on New column or click on the + at the end of the row to adda new column 
+
+Add the display name, select a data type.  When using Choice as the data type try to use existing global choice lists using the Sync this choice with option and selecting an a appropriate list. 
+Hover over a list to get a preview of the contents  
