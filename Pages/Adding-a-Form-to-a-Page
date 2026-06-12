@@ -1,0 +1,21 @@
+From the main navigation select the page the form needs to be added to. 
+
+Hover over the edge of a section the form is to be added after and select + ADD A SECTION 
+
+Select a single column section and then clock on Form to add a form. 
+
+Click on New Form 
+
+Select the table the form data is to be saved to 
+
+Select the form that has previously been created (see Creating a form) 
+
+Give the form a name e.g. Create issue Form 
+
+In Data select the function the form will carry out on the data e.g. Creates a new record / Is read only 
+
+In the  On Submit option choose what happens after the form has been submitted 
+
+Turn on CAPTCHA for anonymous users only. 
+
+Enable attachments if required and choose appropriate options. Upload size limit is usually set to 5000 – 5Mb
