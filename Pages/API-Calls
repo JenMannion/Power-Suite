@@ -1,0 +1,51 @@
+In Power Pages Portal Management under Site Settings add the following changing the rsme_RSMEUtilityMeter for the relevant table name 
+
+Note in the example below the plural name is used when. The expand option pulls in related table information (in this case a lookup to the utility type). The values can be accessed using the dot notation - rsme_UtilityType.rsme_name 
+
+Select=* can be changed to specific column names. 
+
+ 
+
+Example  
+
+rsme.powerappsportals.com/_api/rsme_rsmeutilitymeters?$select=*&$expand=rsme_UtilityType($select=*) 
+
+This set the lookup but the change is not registered when the form is saved. Although the field shows the correct lookup value it is not written back to the database 
+
+Set utility type lookup 
+
+$("#rsme_utility").val(data.rsme_UtilityType.rsme_rsmeutilitytypeid); // lookupId -- GUID 
+$("#rsme_utility_name").val(data.rsme_UtilityType.rsme_name); // Record Value 
+$("#rsme_utility_entityname").val("rsme_RSMEUtilityType"); // Entity name 
+
+ 
+
+ 
+
+Javascript code in the form 
+
+$(document).ready(function () { 
+     $("#rsme_meter").change(ChangeMeter); 
+     // ChangeMeter(); 
+   } 
+ ); 
+
+function ChangeMeter() { 
+
+  // https://rsme.powerappsportals.com/_api/rsme_rsmeutilitymeters?$select=*&$expand=rsme_UtilityType($select=*) 
+
+var meterId = $(this).val()?.replace(/[{}]/g, ""); 
+var utilityTypeField = $("#rsme_utilitytype"); 
+
+  $.get("/_api/rsme_rsmeutilitymeters(" + meterId + ") $select=*&$expand=rsme_UtilityType($select=*)") 
+    .done(function(data) { 
+       utilityTypeField.val(data.rsme_UtilityType.rsme_name || ""); 
+    })  
+
+    .fail(function(){ 
+        console.log ("Failed to fetch utility type") 
+    }) 
+
+} 
+
+ 
